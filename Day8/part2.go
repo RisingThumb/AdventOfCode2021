@@ -58,8 +58,6 @@ func main() {
 				lettersInNumber[8] = sequence
 			}
 		}
-		fmt.Println(line[10:])
-		fmt.Println(getOutput(lettersInNumber, line[10:]))
 		sum += getOutput(lettersInNumber, line[10:])
 	}
 	fmt.Println(sum)
