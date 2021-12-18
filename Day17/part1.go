@@ -48,7 +48,6 @@ func main() {
         xInt, _ := strconv.ParseInt(xValue, 10, 64)
         xPartInt = append(xPartInt, int(xInt))
     }
-	fmt.Println(xPart, yPart)
     initialVelocity := 5000
     highestYPosition := 0
     yMin := min(yPartInt[0], yPartInt[1])
@@ -63,7 +62,6 @@ func main() {
 
     xMin := min(xPartInt[0], xPartInt[1])
     xMax := max(xPartInt[0], xPartInt[1])
-    fmt.Println(xMin, xMax)
     allXInitialVelocities := []int{}
     for i := -initialVelocity; i < initialVelocity; i++ {
         success := isInRangeForXVelocity(i, xMin, xMax)
